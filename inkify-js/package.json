@@ -1,0 +1,39 @@
+{
+  "name": "inkify",
+  "version": "0.1.0",
+  "description": "A lightweight and efficient library for styling terminal output with colors and effects.",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "import": "./dist/index.js",
+    "require": "./dist/index.cjs"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest",
+    "lint": "eslint .",
+    "prepare": "npm run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/liavbarsheshet/inkify.git"
+  },
+  "keywords": [
+    "terminal",
+    "console",
+    "styling",
+    "colors",
+    "styles"
+  ],
+  "author": "Liav Barsheshet <liavbarsheshet@gmail.com>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.7.3",
+    "eslint": "^9.19.0",
+    "vitest": "^3.0.5"
+  }
+}
