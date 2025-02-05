@@ -1,3 +1,10 @@
+/**
+ * @fileoverview Provides a Color representation for inkify style logic.
+ * @module Color
+ *
+ * @author Liav Barsheshet <liavbarsheshet@gmail.com>
+ */
+
 import * as util from "./util";
 
 /**
@@ -19,59 +26,66 @@ export class Color {
   // Default Console 4 bit color codes
 
   /**
-   * Returns the console Color representation for black.
+   * Returns the console Color definition for black.
    */
   static black(): Color {
     return new Color("0");
   }
 
   /**
-   * Returns the console Color representation for red.
+   * Returns the console Color definition for red.
    */
   static red(): Color {
     return new Color("1");
   }
 
   /**
-   * Returns the console Color representation for green.
+   * Returns the console Color definition for green.
    */
   static green(): Color {
     return new Color("2");
   }
 
   /**
-   * Returns the console Color representation for yellow.
+   * Returns the console Color definition for yellow.
    */
   static yellow(): Color {
     return new Color("3");
   }
 
   /**
-   * Returns the console Color representation for blue.
+   * Returns the console Color definition for blue.
    */
   static blue(): Color {
     return new Color("4");
   }
 
   /**
-   * Returns the console Color representation for magenta.
+   * Returns the console Color definition for magenta.
    */
   static magenta(): Color {
     return new Color("5");
   }
 
   /**
-   * Returns the console Color representation for cyan.
+   * Returns the console Color definition for cyan.
    */
   static cyan(): Color {
     return new Color("6");
   }
 
   /**
-   * Returns the console Color representation for cyan.
+   * Returns the console Color definition for white.
    */
   static white(): Color {
     return new Color("7");
+  }
+
+  /**
+   * Returns the console default Color.
+   */
+  static default(): Color {
+    return new Color("9");
   }
 
   /**
